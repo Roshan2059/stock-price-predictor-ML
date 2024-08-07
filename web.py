@@ -18,3 +18,13 @@ google_data = yf.download(stock, start, end)
 model = load_model('latest_stock_price_predictor_model.keras')
 st.subheader('Stock Data')
 st.write(google_data)
+
+splitting_len = int(len(google_data)*0.7)
+x_test = pd.DataFrame(google_data.Close[splitting_len:])
+
+def plot_graph(figsize, values, full_data):
+    fig = plt.figure(figsize=figsize)
+    plt.plot(values, 'Orange')
+    plt.plot(full_data.Close, 'b')
+    return fig
+
