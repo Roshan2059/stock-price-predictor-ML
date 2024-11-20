@@ -20,6 +20,8 @@ First make a virtual environment using: python -m venv env
 activate  the virtual env:env\scripts\activate
 cd stock-market-price-predictor
 pip install -r requirements.txt
+
+For running code: streamlit run web.py
 ```
 
 ## Usage
