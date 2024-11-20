@@ -40,3 +40,31 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE]() file for more details.
+
+usecaseDiagram
+actor User
+actor System
+
+    User --> (Enter Stock Symbol)
+    User --> (Select Model for Prediction)
+    User --> (Select Date for Prediction)
+    User --> (View Stock Data)
+    User --> (Predict Next 7 Days)
+    User --> (View Actual vs Predicted Data)
+    User --> (View Future Predictions)
+
+    (Enter Stock Symbol) --> (View Stock Data)
+    (Select Model for Prediction) --> (View Actual vs Predicted Data)
+    (Select Date for Prediction) --> (View Stock Data)
+    (Predict Next 7 Days) --> (View Future Predictions)
+    (View Stock Data) --> System
+    (View Actual vs Predicted Data) --> System
+    (View Future Predictions) --> System
+
+    System --> (Fetch Stock Data)
+    System --> (Preprocess Data)
+    System --> (Train Model: LSTM or Regression)
+    System --> (Make Predictions)
+    System --> (Visualize Data)
+
+    System --> (Store/Load Model)
