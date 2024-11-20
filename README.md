@@ -16,6 +16,8 @@ To get started, clone the repository and install the required dependencies.
 
 ```bash
 git clone https://github.com/Roshan2059/stock-market-price-predictor.git
+First make a virtual environment using: python -m venv env
+activate  the virtual env:env\scripts\activate
 cd stock-market-price-predictor
 pip install -r requirements.txt
 ```
