@@ -191,3 +191,6 @@ ax1.set_ylabel("Price")
 ax1.legend()
 st.pyplot(fig1)
 
+
+
+

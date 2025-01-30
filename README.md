@@ -21,7 +21,11 @@ activate  the virtual env:env\scripts\activate
 cd stock-market-price-predictor
 pip install -r requirements.txt
 
+then run stock_predictor.py
+
 For running code: streamlit run web.py
+
+This will open the browser
 ```
 
 ## Usage
